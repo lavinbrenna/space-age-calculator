@@ -90,11 +90,25 @@ export default class Person{
         return parseFloat((nonBLE * 1.88).toFixed(2));
       }
     }
+    else if(planet === "jupiter"){
+      if(gender === "female"){
+        return parseFloat((femaleLE * 11.86).toFixed(2));
+      }else if(gender === "male"){
+        return parseFloat((maleLE * 11.86).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * 11.86).toFixed(2));
+      }
+    }
     else{
       return 0;
     }
   }
 
+  //life left one each planet function!
+
+  //how old is keith richards function
+
+  //mayfly function
 }
 /*
 I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
