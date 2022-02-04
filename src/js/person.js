@@ -31,6 +31,7 @@ export default class Person{
     return uranusAge;
   }
   neptuneAge(){
-    
+    let neptuneAge = parseFloat((this.age * 164.79).toFixed(2));
+    return neptuneAge;
   }
 }
