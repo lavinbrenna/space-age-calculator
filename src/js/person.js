@@ -7,6 +7,9 @@ export default class Person{
   earthAge(){
     return this.age;
   }
+  earthLifeExpectancy(){
+    
+  }
   mercuryAge(){
     let mercuryAge = parseFloat((this.age * .24).toFixed(2));
     return mercuryAge;
