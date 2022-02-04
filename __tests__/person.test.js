@@ -69,16 +69,21 @@ describe('Person', ()=>{
     expect(person2.planetaryAge("pluto")).toEqual(3728.85);
     expect(person3.planetaryAge("pluto")).toEqual(5966.16);
   });
+  test("should return 0 if no planet is entered", ()=>{
+    expect(person1.planetaryExpectancy("")).toEqual(0);
+    expect(person1.planetaryExpectancy("")).toEqual(0);
+    expect(person1.planetaryExpectancy("")).toEqual(0);
+  });
   test("should return avg life expectancy based on gender ex: female", ()=>{
-    expect(person1.earthExpectancy()).toEqual(75.6);
+    expect(person1.planetaryExpectancy("earth", person1.gender)).toEqual(75.6);
     expect(person1.lifeExpectancy).toEqual(75.6);
   });
   test("should return avg life expectancy based on gender ex: male", ()=>{
-    expect(person2.earthExpectancy()).toEqual(70.8);
+    expect(person2.planetaryExpectancy("earth", person2.gender)).toEqual(70.8);
     expect(person2.lifeExpectancy).toEqual(70.8);
   });
   test("should return avg life expectancy based on gender ex: non-binary", ()=>{
-    expect(person3.earthExpectancy()).toEqual(73.2);
+    expect(person3.planetaryExpectancy("earth", person3.gender)).toEqual(73.2);
     expect(person3.lifeExpectancy).toEqual(73.2);
   });
 });

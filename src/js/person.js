@@ -39,22 +39,39 @@ export default class Person{
     }
   }
 
-  earthExpectancy(){
-    if(this.gender === "female"){
-      this.lifeExpectancy += 75.6;
-      return this.lifeExpectancy;
-    }else if(this.gender === "male"){
-      this.lifeExpectancy += 70.8;
-      return this.lifeExpectancy;
-    }else{
-      //this is based on the average of m/f life expectancies as there is not a solid number on non-binary life expectancy
-      this.lifeExpectancy += 73.2;
-      return this.lifeExpectancy;
+  // earthExpectancy(){
+  //   if(this.gender === "female"){
+  //     this.lifeExpectancy += 75.6;
+  //     return this.lifeExpectancy;
+  //   }else if(this.gender === "male"){
+  //     this.lifeExpectancy += 70.8;
+  //     return this.lifeExpectancy;
+  //   }else{
+  //     //this is based on the average of m/f life expectancies as there is not a solid number on non-binary life expectancy
+  //     this.lifeExpectancy += 73.2;
+  //     return this.lifeExpectancy;
+  //   }
+  // }
+
+  planetaryExpectancy(planet, gender){
+    let femaleLE = 75.6;
+    let maleLE = 70.8;
+    let nonBLE = 73.2;
+    if(planet === "earth") {
+      if(gender === "female"){
+        return this.lifeExpectancy += femaleLE;
+      }else if(gender ==="male"){
+        return this.lifeExpectancy += maleLE;
+      }else{
+        return this.lifeExpectancy += nonBLE;
+      }
+    }
+    else{
+      return 0;
     }
   }
+
 }
-
-
 /*
 I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
   mercury(age){
