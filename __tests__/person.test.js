@@ -19,12 +19,17 @@ describe('Person', ()=>{
     expect(person3.age).toEqual(24);
     expect(person3.gender).toEqual("non-binary");
   });
+  test("should determine a person's age on planet earth", ()=>{
+    expect(person1.age("earth")).toEqual(31);
+    expect(person2.age("earth")).toEqual(15);
+    expect(person3.age("earth")).toEqual(24);
+  });
 });
 
 
 /*
 
-I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary.
+I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
   test("should return avg life expectancy based on gender ex: female", ()=>{
     expect(person1.earthLifeExpectancy()).toEqual(75.6);
     expect(person1.lifeExpectancy).toEqual(75.6);
