@@ -12,6 +12,9 @@ export default class Person{
     else if(planet === "mercury"){
       return parseFloat((this.age * .24).toFixed(2));
     }
+    else if(planet === "venus"){
+      return parseFloat((this.age * .62).toFixed(2));
+    }
     else{
       return 0;
     }
