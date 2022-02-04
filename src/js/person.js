@@ -36,6 +36,9 @@ export default class Person{
     let venusAge = parseFloat((this.age * .62).toFixed(2));
     return venusAge;
   }
+  venusLifeExpectancy(){
+    
+  }
   marsAge(){
     let marsAge = parseFloat((this.age * 1.88).toFixed(2));
     return marsAge;

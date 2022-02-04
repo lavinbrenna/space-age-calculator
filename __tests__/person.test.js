@@ -52,6 +52,14 @@ describe('Person', ()=>{
     expect(person2.venusAge()).toEqual(9.3);
     expect(person3.venusAge()).toEqual(14.88);
   });
+  test("should return a person's life expectancy on Venus", ()=>{
+    person1.earthLifeExpectancy();
+    person2.earthLifeExpectancy();
+    person3.earthLifeExpectancy();
+    expect(person1.venusLifeExpectancy()).toEqual(46.87);
+    expect(person2.venusLifeExpectancy()).toEqual(43.80);
+    expect(person3.venusLifeExpectancy()).toEqual(45.38);
+  });
   test("should return a person's age on Mars ex: 58.28", ()=>{
     expect(person1.marsAge()).toEqual(58.28);
     expect(person2.marsAge()).toEqual(28.20);
