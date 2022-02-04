@@ -57,7 +57,7 @@ describe('Person', ()=>{
     person2.earthLifeExpectancy();
     person3.earthLifeExpectancy();
     expect(person1.venusLifeExpectancy()).toEqual(46.87);
-    expect(person2.venusLifeExpectancy()).toEqual(43.80);
+    expect(person2.venusLifeExpectancy()).toEqual(43.90);
     expect(person3.venusLifeExpectancy()).toEqual(45.38);
   });
   test("should return a person's age on Mars ex: 58.28", ()=>{
