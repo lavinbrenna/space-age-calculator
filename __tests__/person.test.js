@@ -84,7 +84,7 @@ describe('Person', ()=>{
     person3.earthLifeExpectancy();
     expect(person1.jupiterLifeExpectancy()).toEqual(896.62);
     expect(person2.jupiterLifeExpectancy()).toEqual(839.69);
-    expect(person3.jupiterLifeExpectancy()).toEqual(871.71);
+    expect(person3.jupiterLifeExpectancy()).toEqual(868.15);
   });
   test("should return a person's age on Saturn ex: 913.26", ()=>{
     expect(person1.saturnAge()).toEqual(913.26);

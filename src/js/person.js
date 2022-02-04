@@ -52,6 +52,8 @@ export default class Person{
     return jupiterAge;
   }
   jupiterLifeExpectancy(){
+    let jupiterLE = parseFloat((this.lifeExpectancy * 11.86).toFixed(2));
+    return jupiterLE;
   }
   saturnAge(){
     let saturnAge = parseFloat((this.age * 29.46).toFixed(2));
