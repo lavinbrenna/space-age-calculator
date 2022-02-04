@@ -39,6 +39,11 @@ describe('Person', ()=>{
     expect(person2.mercuryAge()).toEqual(3.6);
     expect(person3.mercuryAge()).toEqual(5.76);
   });
+  test("should return a person's life expectancy on Mercury", ()=>{
+    expect(person1.mercuryLifeExpectancy()).toEqual(18.14);
+    expect(person2.mercuryLifeExpectancy()).toEqual(16.99);
+    expect(person3.mercuryLifeExpectancy()).toEqual(17.56);
+  });
   test("should return a person's age on Venus ex: 19.22", ()=>{
     expect(person1.venusAge()).toEqual(19.22);
     expect(person2.venusAge()).toEqual(9.3);
