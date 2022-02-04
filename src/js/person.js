@@ -7,8 +7,11 @@ export default class Person{
     return this.age;
   }
   mercuryAge(){
-    let mercuryAge = 0;
-    mercuryAge = parseFloat((this.age * .24).toFixed(2));
+    let mercuryAge = parseFloat((this.age * .24).toFixed(2));
     return mercuryAge;
+  }
+  venusAge(){
+    let venusAge = parseFloat((this.age * .62).toFixed(2));
+    return venusAge;
   }
 }
