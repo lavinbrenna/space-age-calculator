@@ -69,6 +69,18 @@ describe('Person', ()=>{
     expect(person2.planetaryAge("pluto")).toEqual(3728.85);
     expect(person3.planetaryAge("pluto")).toEqual(5966.16);
   });
+  test("should return avg life expectancy based on gender ex: female", ()=>{
+    expect(person1.earthExpectancy()).toEqual(75.6);
+    expect(person1.lifeExpectancy).toEqual(75.6);
+  });
+  test("should return avg life expectancy based on gender ex: male", ()=>{
+    expect(person2.earthExpectancy()).toEqual(70.8);
+    expect(person2.lifeExpectancy).toEqual(70.8);
+  });
+  test("should return avg life expectancy based on gender ex: non-binary", ()=>{
+    expect(person3.earthExpectancy()).toEqual(73.2);
+    expect(person3.lifeExpectancy).toEqual(73.2);
+  });
 });
 
 
@@ -76,18 +88,7 @@ describe('Person', ()=>{
 /*
 
 I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
-  test("should return avg life expectancy based on gender ex: female", ()=>{
-    expect(person1.earthLifeExpectancy()).toEqual(75.6);
-    expect(person1.lifeExpectancy).toEqual(75.6);
-  });
-  test("should return avg life expectancy based on gender ex: male", ()=>{
-    expect(person2.earthLifeExpectancy()).toEqual(70.8);
-    expect(person2.lifeExpectancy).toEqual(70.8);
-  });
-  test("should return avg life expectancy based on gender ex: non-binary", ()=>{
-    expect(person3.earthLifeExpectancy()).toEqual(73.2);
-    expect(person3.lifeExpectancy).toEqual(73.2);
-  });
+  
   test("should return a person's age on Earth ex: 31, 15, 24", ()=>{
     expect(person1.earthAge()).toEqual(31);
     expect(person2.earthAge()).toEqual(15);

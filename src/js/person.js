@@ -31,13 +31,15 @@ export default class Person{
     else if(planet === "neptune"){
       return parseFloat((this.age * 164.79).toFixed(2));
     }
+    else if(planet === "pluto"){
+      return parseFloat((this.age * 248.59).toFixed(2));
+    }
     else{
       return 0;
     }
   }
-}
-/*
-  lifeExpectancy(){
+
+  earthExpectancy(){
     if(this.gender === "female"){
       this.lifeExpectancy += 75.6;
       return this.lifeExpectancy;
@@ -50,8 +52,8 @@ export default class Person{
       return this.lifeExpectancy;
     }
   }
+}
 
-*/
 
 /*
 I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
@@ -87,12 +89,6 @@ I decided to go an entirely new direction for my project, I was writing a functi
     let plutoAge = parseFloat((this.age * 248.59).toFixed(2));
     return plutoAge;
   }
-
-    
-    else{
-      parseFloat((this.age * 248.59).toFixed(2));
-    }
-
   mercuryLifeExpectancy(){
     let mercuryLE = parseFloat((this.lifeExpectancy * .24).toFixed(2));
     return mercuryLE;
@@ -108,4 +104,5 @@ I decided to go an entirely new direction for my project, I was writing a functi
   jupiterLifeExpectancy(){
     let jupiterLE = parseFloat((this.lifeExpectancy * 11.86).toFixed(2));
     return jupiterLE;
-  }*/
+  }
+  */
