@@ -114,6 +114,11 @@ describe('Person', ()=>{
     expect(person2.planetaryExpectancy("neptune")).toEqual(11667.13);
     expect(person3.planetaryExpectancy("neptune")).toEqual(12062.63);
   });
+  test("should return avg life expectancy on pluto, based on gender", ()=>{
+    expect(person1.planetaryExpectancy("pluto")).toEqual(18793.40);
+    expect(person2.planetaryExpectancy("pluto")).toEqual(17600.17);
+    expect(person3.planetaryExpectancy("pluto")).toEqual(18196.79);
+  });
 });
 
 

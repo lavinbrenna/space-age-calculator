@@ -124,11 +124,20 @@ export default class Person{
         return parseFloat((nonBLE * 164.79).toFixed(2));
       }
     }
+    else if(planet === "neptune"){
+      if(this.gender === "female"){
+        return parseFloat((femaleLE * 248.59).toFixed(2));
+      }else if(this.gender === "male"){
+        return parseFloat((maleLE * 248.59).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * 248.59).toFixed(2));
+      }
+    }
     else{
       return 0;
     }
   }
-  //neptune 164.79 pluto 248.59
+  //pluto 248.59
   //life left one each planet function!
 
   //how old is keith richards function
