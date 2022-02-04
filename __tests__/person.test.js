@@ -59,6 +59,11 @@ describe('Person', ()=>{
     expect(person2.planetaryAge("uranus")).toEqual(1260.15);
     expect(person3.planetaryAge("uranus")).toEqual(2016.24);
   });
+  test("should determine a person's age on Neptune", ()=>{
+    expect(person1.planetaryAge("neptune")).toEqual(5108.49);
+    expect(person2.planetaryAge("neptune")).toEqual(2471.85);
+    expect(person3.planetaryAge("neptune")).toEqual(3954.96);
+  });
 });
 
 
