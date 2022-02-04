@@ -86,6 +86,11 @@ describe('Person', ()=>{
     expect(person3.planetaryExpectancy("earth", person3.gender)).toEqual(73.2);
     expect(person3.lifeExpectancy).toEqual(73.2);
   });
+  test("should return avg life expectancy on mercury",()=>{
+    expect(person1.planetaryExpectancy("mercury", person1.gender)).toEqual(18.14);
+    expect(person2.planetaryExpectancy("mercury", person2.gender)).toEqual(16.99);
+    expect(person3.planetaryExpectancy("mercury", person3.gender)).toEqual(17.57);
+  });
 });
 
 

@@ -65,6 +65,14 @@ export default class Person{
       }else{
         return this.lifeExpectancy += nonBLE;
       }
+    }else if(planet === "mercury"){
+      if(gender === "female"){
+        return parseFloat((femaleLE * .24).toFixed(2));
+      }else if(gender === "male"){
+        parseFloat((maleLE * .24).toFixed(2));
+      }else{
+        parseFloat((nonBLE * .24).toFixed(2));
+      }
     }
     else{
       return 0;
