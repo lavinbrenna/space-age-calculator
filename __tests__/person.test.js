@@ -24,6 +24,11 @@ describe('Person', ()=>{
     expect(person2.planetaryAge("earth")).toEqual(15);
     expect(person3.planetaryAge("earth")).toEqual(24);
   });
+  test("should determine a person's age on planet earth", ()=>{
+    expect(person1.planetaryAge("mercury")).toEqual(7.44);
+    expect(person2.planetaryAge("mercury")).toEqual(3.6);
+    expect(person3.planetaryAge("mercury")).toEqual(5.76);
+  });
 });
 
 
