@@ -2,6 +2,7 @@ export default class Person{
   constructor(age, gender){
     this.age = age;
     this.gender = gender;
+    this.lifeExpectancy = 0;
   }
 
   earthAge(){
@@ -9,22 +10,29 @@ export default class Person{
   }
 
   earthLifeExpectancy(){
-    let lifeExpectancy = 0;
     if(this.gender === "female"){
-      lifeExpectancy = 75.6;
+      this.lifeExpectancy += 75.6;
+      return this.lifeExpectancy;
     }else if(this.gender === "male"){
-      lifeExpectancy = 70.8;
+      this.lifeExpectancy += 70.8;
+      return this.lifeExpectancy;
     }else{
       //this is based on the average of m/f life expectancies as there is not a solid number on non-binary life expectancy
-      lifeExpectancy = 73.2;
+      this.lifeExpectancy += 73.2;
+      return this.lifeExpectancy;
     }
-    return lifeExpectancy;
   }
 
   mercuryAge(){
     let mercuryAge = parseFloat((this.age * .24).toFixed(2));
     return mercuryAge;
   }
+  // mercuryLifeExpectancy(mercuryAge){
+  //   let mercuryLE = parseFloat((this.lifeExpectancy * .24).toFixed(2));
+  //   return mercuryLE;
+
+
+  // }
   venusAge(){
     let venusAge = parseFloat((this.age * .62).toFixed(2));
     return venusAge;
