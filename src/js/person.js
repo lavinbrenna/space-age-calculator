@@ -27,12 +27,11 @@ export default class Person{
     let mercuryAge = parseFloat((this.age * .24).toFixed(2));
     return mercuryAge;
   }
-  // mercuryLifeExpectancy(mercuryAge){
-  //   let mercuryLE = parseFloat((this.lifeExpectancy * .24).toFixed(2));
-  //   return mercuryLE;
-
-
-  // }
+  mercuryLifeExpectancy(){
+    let mercuryLE = parseFloat((this.lifeExpectancy * .24).toFixed(2));
+    console.log(mercuryLE);
+    return mercuryLE;
+  }
   venusAge(){
     let venusAge = parseFloat((this.age * .62).toFixed(2));
     return venusAge;
