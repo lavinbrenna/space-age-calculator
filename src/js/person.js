@@ -52,58 +52,66 @@ export default class Person{
   //   }
   // }
 
-  planetaryExpectancy(planet, gender){
+  planetaryExpectancy(planet){
     let femaleLE = 75.6;
     let maleLE = 70.8;
     let nonBLE = 73.2;
     if(planet === "earth") {
-      if(gender === "female"){
+      if(this.gender === "female"){
         return femaleLE;
-      }else if(gender ==="male"){
+      }else if(this.gender ==="male"){
         return maleLE;
       }else{
         return nonBLE;
       }
     }else if(planet === "mercury"){
-      if(gender === "female"){
+      if(this.gender === "female"){
         return parseFloat((femaleLE * .24).toFixed(2));
-      }else if(gender === "male"){
+      }else if(this.gender === "male"){
         return parseFloat((maleLE * .24).toFixed(2));
       }else{
         return parseFloat((nonBLE * .24).toFixed(2));
       }
     }else if(planet === "venus"){
-      if(gender === "female"){
+      if(this.gender === "female"){
         return parseFloat((femaleLE * .62).toFixed(2));
-      }else if(gender === "male"){
+      }else if(this.gender === "male"){
         return parseFloat((maleLE * .62).toFixed(2));
       }else{
         return parseFloat((nonBLE * .62).toFixed(2));
       }
     }
     else if(planet === "mars"){
-      if(gender === "female"){
+      if(this.gender === "female"){
         return parseFloat((femaleLE * 1.88).toFixed(2));
-      }else if(gender === "male"){
+      }else if(this.gender === "male"){
         return parseFloat((maleLE * 1.88).toFixed(2));
       }else{
         return parseFloat((nonBLE * 1.88).toFixed(2));
       }
     }
     else if(planet === "jupiter"){
-      if(gender === "female"){
+      if(this.gender === "female"){
         return parseFloat((femaleLE * 11.86).toFixed(2));
-      }else if(gender === "male"){
+      }else if(this.gender === "male"){
         return parseFloat((maleLE * 11.86).toFixed(2));
       }else{
         return parseFloat((nonBLE * 11.86).toFixed(2));
+      }
+    }else if(planet === "saturn"){
+      if(this.gender === "female"){
+        return parseFloat((femaleLE * 29.46).toFixed(2));
+      }else if(this.gender === "male"){
+        return parseFloat((maleLE * 29.46).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * 29.46).toFixed(2));
       }
     }
     else{
       return 0;
     }
   }
-  //saturn 29.46 uranus 84.01 neptune 164.79 pluto 248.59
+  //uranus 84.01 neptune 164.79 pluto 248.59
   //life left one each planet function!
 
   //how old is keith richards function

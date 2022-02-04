@@ -75,34 +75,34 @@ describe('Person', ()=>{
     expect(person1.planetaryExpectancy("")).toEqual(0);
   });
   test("should return avg life expectancy on earth, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("earth", person1.gender)).toEqual(75.6);
-    expect(person2.planetaryExpectancy("earth", person2.gender)).toEqual(70.8);
-    expect(person3.planetaryExpectancy("earth", person3.gender)).toEqual(73.2);
+    expect(person1.planetaryExpectancy("earth")).toEqual(75.6);
+    expect(person2.planetaryExpectancy("earth")).toEqual(70.8);
+    expect(person3.planetaryExpectancy("earth")).toEqual(73.2);
   });
   test("should return avg life expectancy on mercury, based on gender",()=>{
-    expect(person1.planetaryExpectancy("mercury", person1.gender)).toEqual(18.14);
-    expect(person2.planetaryExpectancy("mercury", person2.gender)).toEqual(16.99);
-    expect(person3.planetaryExpectancy("mercury", person3.gender)).toEqual(17.57);
+    expect(person1.planetaryExpectancy("mercury")).toEqual(18.14);
+    expect(person2.planetaryExpectancy("mercury")).toEqual(16.99);
+    expect(person3.planetaryExpectancy("mercury")).toEqual(17.57);
   });
   test("should return avg life expectancy on venus, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("venus", person1.gender)).toEqual(46.87);
-    expect(person2.planetaryExpectancy("venus", person2.gender)).toEqual(43.90);
-    expect(person3.planetaryExpectancy("venus", person3.gender)).toEqual(45.38);
+    expect(person1.planetaryExpectancy("venus")).toEqual(46.87);
+    expect(person2.planetaryExpectancy("venus")).toEqual(43.90);
+    expect(person3.planetaryExpectancy("venus")).toEqual(45.38);
   });
   test("should return avg life expectancy on mars, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("mars", person1.gender)).toEqual(142.13);
-    expect(person2.planetaryExpectancy("mars", person2.gender)).toEqual(133.10);
-    expect(person3.planetaryExpectancy("mars", person3.gender)).toEqual(137.62);
+    expect(person1.planetaryExpectancy("mars")).toEqual(142.13);
+    expect(person2.planetaryExpectancy("mars")).toEqual(133.10);
+    expect(person3.planetaryExpectancy("mars")).toEqual(137.62);
   });
   test("should return avg life expectancy on jupiter, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("jupiter", person1.gender)).toEqual(896.62);
-    expect(person2.planetaryExpectancy("jupiter", person2.gender)).toEqual(839.69);
-    expect(person3.planetaryExpectancy("jupiter", person3.gender)).toEqual(868.15);
+    expect(person1.planetaryExpectancy("jupiter")).toEqual(896.62);
+    expect(person2.planetaryExpectancy("jupiter")).toEqual(839.69);
+    expect(person3.planetaryExpectancy("jupiter")).toEqual(868.15);
   });
   test("should return avg life expectancy on saturn, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("saturn", person1.gender)).toEqual(2227.18);
-    expect(person2.planetaryExpectancy("saturn", person2.gender)).toEqual(2085.77);
-    expect(person3.planetaryExpectancy("saturn", person3.gender)).toEqual(2156.47);
+    expect(person1.planetaryExpectancy("saturn")).toEqual(2227.18);
+    expect(person2.planetaryExpectancy("saturn")).toEqual(2085.77);
+    expect(person3.planetaryExpectancy("saturn")).toEqual(2156.47);
   });
 });
 
