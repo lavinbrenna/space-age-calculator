@@ -103,7 +103,7 @@ export default class Person{
       return 0;
     }
   }
-
+  //saturn 29.46 uranus 84.01 neptune 164.79 pluto 248.59
   //life left one each planet function!
 
   //how old is keith richards function
