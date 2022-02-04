@@ -44,6 +44,9 @@ export default class Person{
     let marsAge = parseFloat((this.age * 1.88).toFixed(2));
     return marsAge;
   }
+  marsLifeExpectancy(){
+
+  }
   jupiterAge(){
     let jupiterAge = parseFloat((this.age * 11.86).toFixed(2));
     return jupiterAge;
