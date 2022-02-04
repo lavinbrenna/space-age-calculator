@@ -69,9 +69,17 @@ export default class Person{
       if(gender === "female"){
         return parseFloat((femaleLE * .24).toFixed(2));
       }else if(gender === "male"){
-        parseFloat((maleLE * .24).toFixed(2));
+        return parseFloat((maleLE * .24).toFixed(2));
       }else{
-        parseFloat((nonBLE * .24).toFixed(2));
+        return parseFloat((nonBLE * .24).toFixed(2));
+      }
+    }else if(planet === "venus"){
+      if(gender === "female"){
+        return parseFloat((femaleLE * .62).toFixed(2));
+      }else if(gender === "male"){
+        return parseFloat((maleLE * .62).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * .62).toFixed(2));
       }
     }
     else{
