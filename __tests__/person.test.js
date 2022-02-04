@@ -11,13 +11,16 @@ describe('Person', ()=>{
   test("should create a person object with age constructor", ()=>{
     expect(person.age).toEqual(31);
   });
-  test("should return a person's age on Earth", ()=>{
+  test("should return a person's age on Earth ex: 31", ()=>{
     expect(person.earthAge()).toEqual(31);
   });
-  test("should return a person's age on Mercury", ()=>{
+  test("should return a person's age on Mercury ex: 7.44", ()=>{
     expect(person.mercuryAge()).toEqual(7.44);
   });
-  test("should return a person's age on Venus", ()=>{
+  test("should return a person's age on Venus ex: 19.22", ()=>{
     expect(person.venusAge()).toEqual(19.22);
+  });
+  test("should return a person's age on Mars ex: 58.28", ()=>{
+    expect(person.marsAge()).toEqual(58.28);
   });
 });
