@@ -20,9 +20,9 @@ describe('Person', ()=>{
     expect(person3.gender).toEqual("non-binary");
   });
   test("should determine a person's age on planet earth", ()=>{
-    expect(person1.age("earth")).toEqual(31);
-    expect(person2.age("earth")).toEqual(15);
-    expect(person3.age("earth")).toEqual(24);
+    expect(person1.planetaryAge("earth")).toEqual(31);
+    expect(person2.planetaryAge("earth")).toEqual(15);
+    expect(person3.planetaryAge("earth")).toEqual(24);
   });
 });
 
