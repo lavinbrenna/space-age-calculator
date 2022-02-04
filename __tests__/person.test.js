@@ -104,7 +104,7 @@ describe('Person', ()=>{
     expect(person2.planetaryExpectancy("saturn")).toEqual(2085.77);
     expect(person3.planetaryExpectancy("saturn")).toEqual(2156.47);
   });
-  test("should return avg life expectancy on saturn, based on gender", ()=>{
+  test("should return avg life expectancy on uranus, based on gender", ()=>{
     expect(person1.planetaryExpectancy("uranus")).toEqual(6351.16);
     expect(person2.planetaryExpectancy("uranus")).toEqual(5947.91);
     expect(person3.planetaryExpectancy("uranus")).toEqual(6149.53);

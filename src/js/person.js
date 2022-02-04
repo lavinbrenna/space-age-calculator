@@ -106,6 +106,14 @@ export default class Person{
       }else{
         return parseFloat((nonBLE * 29.46).toFixed(2));
       }
+    }else if(planet === "uranus"){
+      if(this.gender === "female"){
+        return parseFloat((femaleLE * 84.01).toFixed(2));
+      }else if(this.gender === "male"){
+        return parseFloat((maleLE * 84.01).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * 84.01).toFixed(2));
+      }
     }
     else{
       return 0;
