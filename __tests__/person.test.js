@@ -109,6 +109,11 @@ describe('Person', ()=>{
     expect(person2.planetaryExpectancy("uranus")).toEqual(5947.91);
     expect(person3.planetaryExpectancy("uranus")).toEqual(6149.53);
   });
+  test("should return avg life expectancy on neptune, based on gender", ()=>{
+    expect(person1.planetaryExpectancy("neptune")).toEqual(12458.12);
+    expect(person2.planetaryExpectancy("neptune")).toEqual(11667.13);
+    expect(person3.planetaryExpectancy("neptune")).toEqual(12062.63);
+  });
 });
 
 
