@@ -5,11 +5,12 @@ describe('Person', ()=>{
   let person;
 
   beforeEach(()=>{
-    person = new Person(31);
+    person = new Person(31, "female");
   });
 
   test("should create a person object with age constructor", ()=>{
     expect(person.age).toEqual(31);
+    expect(person.gender).toEqual("female");
   });
   test("should return a person's age on Earth ex: 31", ()=>{
     expect(person.earthAge()).toEqual(31);
