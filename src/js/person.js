@@ -2,7 +2,6 @@ export default class Person{
   constructor(age, gender){
     this.age = age;
     this.gender = gender;
-    this.lifeExpectancy = 0;
   }
 
   planetaryAge(planet){
@@ -59,11 +58,11 @@ export default class Person{
     let nonBLE = 73.2;
     if(planet === "earth") {
       if(gender === "female"){
-        return this.lifeExpectancy += femaleLE;
+        return femaleLE;
       }else if(gender ==="male"){
-        return this.lifeExpectancy += maleLE;
+        return maleLE;
       }else{
-        return this.lifeExpectancy += nonBLE;
+        return nonBLE;
       }
     }else if(planet === "mercury"){
       if(gender === "female"){
@@ -80,6 +79,15 @@ export default class Person{
         return parseFloat((maleLE * .62).toFixed(2));
       }else{
         return parseFloat((nonBLE * .62).toFixed(2));
+      }
+    }
+    else if(planet === "mars"){
+      if(gender === "female"){
+        return parseFloat((femaleLE * 1.88).toFixed(2));
+      }else if(gender === "male"){
+        return parseFloat((maleLE * 1.88).toFixed(2));
+      }else{
+        return parseFloat((nonBLE * 1.88).toFixed(2));
       }
     }
     else{

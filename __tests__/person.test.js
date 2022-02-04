@@ -74,29 +74,22 @@ describe('Person', ()=>{
     expect(person1.planetaryExpectancy("")).toEqual(0);
     expect(person1.planetaryExpectancy("")).toEqual(0);
   });
-  test("should return avg life expectancy based on gender ex: female", ()=>{
+  test("should return avg life expectancy on earth, based on gender", ()=>{
     expect(person1.planetaryExpectancy("earth", person1.gender)).toEqual(75.6);
-    expect(person1.lifeExpectancy).toEqual(75.6);
-  });
-  test("should return avg life expectancy based on gender ex: male", ()=>{
     expect(person2.planetaryExpectancy("earth", person2.gender)).toEqual(70.8);
-    expect(person2.lifeExpectancy).toEqual(70.8);
-  });
-  test("should return avg life expectancy based on gender ex: non-binary", ()=>{
     expect(person3.planetaryExpectancy("earth", person3.gender)).toEqual(73.2);
-    expect(person3.lifeExpectancy).toEqual(73.2);
   });
-  test("should return avg life expectancy on mercury",()=>{
+  test("should return avg life expectancy on mercury, based on gender",()=>{
     expect(person1.planetaryExpectancy("mercury", person1.gender)).toEqual(18.14);
     expect(person2.planetaryExpectancy("mercury", person2.gender)).toEqual(16.99);
     expect(person3.planetaryExpectancy("mercury", person3.gender)).toEqual(17.57);
   });
-  test("should return avg life expectancy on venus", ()=>{
+  test("should return avg life expectancy on venus, based on gender", ()=>{
     expect(person1.planetaryExpectancy("venus", person1.gender)).toEqual(46.87);
     expect(person2.planetaryExpectancy("venus", person2.gender)).toEqual(43.90);
     expect(person3.planetaryExpectancy("venus", person3.gender)).toEqual(45.38);
   });
-  test("should return avg life expectancy on mars", ()=>{
+  test("should return avg life expectancy on mars, based on gender", ()=>{
     expect(person1.planetaryExpectancy("mars", person1.gender)).toEqual(142.13);
     expect(person2.planetaryExpectancy("mars", person2.gender)).toEqual(133.10);
     expect(person3.planetaryExpectancy("mars", person3.gender)).toEqual(137.62);
