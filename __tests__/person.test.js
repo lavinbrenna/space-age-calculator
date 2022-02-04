@@ -24,15 +24,20 @@ describe('Person', ()=>{
     expect(person2.planetaryAge("")).toEqual(0);
     expect(person3.planetaryAge("")).toEqual(0);
   });
-  test("should determine a person's age on earth", ()=>{
+  test("should determine a person's age on Earth", ()=>{
     expect(person1.planetaryAge("earth")).toEqual(31);
     expect(person2.planetaryAge("earth")).toEqual(15);
     expect(person3.planetaryAge("earth")).toEqual(24);
   });
-  test("should determine a person's age on mercury", ()=>{
+  test("should determine a person's age on Mercury", ()=>{
     expect(person1.planetaryAge("mercury")).toEqual(7.44);
     expect(person2.planetaryAge("mercury")).toEqual(3.6);
     expect(person3.planetaryAge("mercury")).toEqual(5.76);
+  });
+  test("should determine a person's age on Venus", ()=>{
+    expect(person1.planetaryAge("venus")).toEqual(7.44);
+    expect(person2.planetaryAge("venus")).toEqual(3.6);
+    expect(person3.planetaryAge("venus")).toEqual(5.76);
   });
 });
 
