@@ -9,6 +9,6 @@ describe('Person', ()=>{
   });
 
   test("should return a person's age", ()=>{
-    expect(person).toEqual(31);
+    expect(person.age).toEqual(31);
   });
 });
