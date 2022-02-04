@@ -21,6 +21,12 @@ describe('Person', ()=>{
   test("should return avg life expectancy based on gender ex: female", ()=>{
     expect(person1.earthLifeExpectancy()).toEqual(75.6);
   });
+  test("should return avg life expectancy based on gender ex: male", ()=>{
+    expect(person2.earthLifeExpectancy()).toEqual(70.8);
+  });
+  test("should return avg life expectancy based on gender ex: non-binary", ()=>{
+    expect(person3.earthLifeExpectancy()).toEqual(73.2);
+  });
   test("should return a person's age on Earth ex: 31", ()=>{
     expect(person1.earthAge()).toEqual(31);
   });

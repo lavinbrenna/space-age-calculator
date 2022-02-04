@@ -7,9 +7,20 @@ export default class Person{
   earthAge(){
     return this.age;
   }
+
   earthLifeExpectancy(){
-    
+    let lifeExpectancy = 0;
+    if(this.gender === "female"){
+      lifeExpectancy = 75.6;
+    }else if(this.gender === "male"){
+      lifeExpectancy = 70.8;
+    }else{
+      //this is based on the average of m/f life expectancies as there is not a solid number on non-binary life expectancy
+      lifeExpectancy = 73.2;
+    }
+    return lifeExpectancy;
   }
+
   mercuryAge(){
     let mercuryAge = parseFloat((this.age * .24).toFixed(2));
     return mercuryAge;
