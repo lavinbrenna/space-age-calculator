@@ -10,10 +10,14 @@ export default class Person{
       return this.age;
     }
     else if(planet === "mercury"){
+
       return parseFloat((this.age * .24).toFixed(2));
     }
     else if(planet === "venus"){
       return parseFloat((this.age * .62).toFixed(2));
+    }
+    else if(planet === "mars"){
+      return parseFloat((this.age * 1.88).toFixed(2));
     }
     else{
       return 0;
@@ -72,13 +76,6 @@ I decided to go an entirely new direction for my project, I was writing a functi
     return plutoAge;
   }
 
-  
-    else if(planet === "venus"){
-      parseFloat((this.age * .62).toFixed(2));
-    }
-    else if(planet === "mars"){
-      parseFloat((this.age * 1.88).toFixed(2));
-    }
     else if(planet === "jupiter"){
       parseFloat((this.age * 11.86).toFixed(2));
     }
