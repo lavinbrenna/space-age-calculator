@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Space Age Calculator_
 
 #### By _**Brenna Lavin**_
 
-#### _{Brief description of application}_
+#### _Like learning your age in dog years, but for planets!_
 
 ## Technologies Used
 
@@ -12,7 +12,11 @@
 * jQuery
 * BootStrap
 * Jest
-  
+* Webpack
+* ESLint
+* Popper.js
+* Babel
+
 ## Description
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
