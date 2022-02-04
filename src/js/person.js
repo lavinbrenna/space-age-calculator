@@ -22,6 +22,9 @@ export default class Person{
     else if(planet === "jupiter"){
       return parseFloat((this.age * 11.86).toFixed(2));
     }
+    else if(planet ==="saturn"){
+      return parseFloat((this.age * 29.46).toFixed(2));
+    }
     else{
       return 0;
     }
@@ -80,9 +83,7 @@ I decided to go an entirely new direction for my project, I was writing a functi
   }
 
     
-    else if(planet ==="saturn"){
-      parseFloat((this.age * 29.46).toFixed(2));
-    }
+    
     else if(planet === "uranus"){
       parseFloat((this.age * 84.01).toFixed(2));
     }
