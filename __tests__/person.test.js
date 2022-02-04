@@ -26,4 +26,7 @@ describe('Person', ()=>{
   test("should return a person's age on Jupiter ex: 367.66", ()=>{
     expect(person.jupiterAge()).toEqual(367.66);
   });
+  test("should return a person's age on Saturn ex: 913.26", ()=>{
+    expect(person.saturnAge()).toEqual(913.26);
+  });
 });
