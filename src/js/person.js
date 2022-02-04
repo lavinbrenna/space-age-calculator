@@ -29,7 +29,6 @@ export default class Person{
   }
   mercuryLifeExpectancy(){
     let mercuryLE = parseFloat((this.lifeExpectancy * .24).toFixed(2));
-    console.log(mercuryLE);
     return mercuryLE;
   }
   venusAge(){
@@ -45,7 +44,8 @@ export default class Person{
     return marsAge;
   }
   marsLifeExpectancy(){
-
+    let marsLE = parseFloat((this.lifeExpectancy * 1.88).toFixed(2));
+    return marsLE;
   }
   jupiterAge(){
     let jupiterAge = parseFloat((this.age * 11.86).toFixed(2));
