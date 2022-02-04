@@ -23,5 +23,7 @@ export default class Person{
     return jupiterAge;
   }
   saturnAge(){
+    let saturnAge = parseFloat((this.age * 29.46).toFixed(2));
+    return saturnAge;
   }
 }
