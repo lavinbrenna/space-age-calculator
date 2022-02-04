@@ -35,7 +35,7 @@ describe('Person', ()=>{
   test("should return a person's age on Neptune ex: 5108.49",()=>{
     expect(person.neptuneAge()).toEqual(5108.49);
   });
-  test("should return a person's age on Pluto ex: 7703.19", ()=>{
-    expect(person.plutoAge()).toEqual(7703.19);
+  test("should return a person's age on Pluto ex: 7706.29", ()=>{
+    expect(person.plutoAge()).toEqual(7706.29);
   });
 });
