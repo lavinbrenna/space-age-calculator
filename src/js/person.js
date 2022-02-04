@@ -38,20 +38,6 @@ export default class Person{
     }
   }
 
-  // earthExpectancy(){
-  //   if(this.gender === "female"){
-  //     this.lifeExpectancy += 75.6;
-  //     return this.lifeExpectancy;
-  //   }else if(this.gender === "male"){
-  //     this.lifeExpectancy += 70.8;
-  //     return this.lifeExpectancy;
-  //   }else{
-  //     //this is based on the average of m/f life expectancies as there is not a solid number on non-binary life expectancy
-  //     this.lifeExpectancy += 73.2;
-  //     return this.lifeExpectancy;
-  //   }
-  // }
-
   planetaryExpectancy(planet){
     let femaleLE = 75.6;
     let maleLE = 70.8;
@@ -137,7 +123,10 @@ export default class Person{
       return 0;
     }
   }
-  //pluto 248.59
+  lifeLeft(){
+
+  }
+
   //life left one each planet function!
 
   //how old is keith richards function

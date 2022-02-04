@@ -119,6 +119,9 @@ describe('Person', ()=>{
     expect(person2.planetaryExpectancy("pluto")).toEqual(17600.17);
     expect(person3.planetaryExpectancy("pluto")).toEqual(18196.79);
   });
+  test("should return years left on planet via age vs ALE", ()=>{
+    expect(person1.lifeLeft()).toEqual(44.6);
+  });
 });
 
 
