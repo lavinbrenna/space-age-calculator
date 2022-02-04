@@ -8,7 +8,10 @@ describe('Person', ()=>{
     person = new Person(31);
   });
 
-  test("should return a person's age", ()=>{
+  test("should create a person object with age constructor", ()=>{
     expect(person.age).toEqual(31);
+  });
+  test("should return a person's age on Earth", ()=>{
+    expect(person.earthAge()).toEqual(31);
   });
 });
