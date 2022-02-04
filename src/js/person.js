@@ -124,7 +124,7 @@ export default class Person{
         return parseFloat((nonBLE * 164.79).toFixed(2));
       }
     }
-    else if(planet === "neptune"){
+    else if(planet === "pluto"){
       if(this.gender === "female"){
         return parseFloat((femaleLE * 248.59).toFixed(2));
       }else if(this.gender === "male"){
