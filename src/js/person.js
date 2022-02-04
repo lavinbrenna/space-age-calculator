@@ -5,36 +5,45 @@ export default class Person{
   }
 
   planetaryAge(planet){
+    let planetAge = 0;
     if(planet === "earth"){
-      return this.age;
+      planetAge = this.age;
+      return planetAge
     }
     else if(planet === "mercury"){
-
-      return parseFloat((this.age * .24).toFixed(2));
+      planetAge = parseFloat((this.age * .24).toFixed(2));
+      return planetAge;
     }
     else if(planet === "venus"){
-      return parseFloat((this.age * .62).toFixed(2));
+      planetAge = parseFloat((this.age * .62).toFixed(2));
+      return planetAge;
     }
     else if(planet === "mars"){
-      return parseFloat((this.age * 1.88).toFixed(2));
+      planetAge = parseFloat((this.age * 1.88).toFixed(2));
+      return planetAge;
     }
     else if(planet === "jupiter"){
-      return parseFloat((this.age * 11.86).toFixed(2));
+      planetAge = parseFloat((this.age * 11.86).toFixed(2));
+      return planetAge;
     }
     else if(planet ==="saturn"){
-      return parseFloat((this.age * 29.46).toFixed(2));
+      planetAge = parseFloat((this.age * 29.46).toFixed(2));
+      return planetAge;
     }
     else if(planet === "uranus"){
-      return parseFloat((this.age * 84.01).toFixed(2));
+      planetAge = parseFloat((this.age * 84.01).toFixed(2));
+      return planetAge;
     }
     else if(planet === "neptune"){
-      return parseFloat((this.age * 164.79).toFixed(2));
+      planetAge = parseFloat((this.age * 164.79).toFixed(2));
+      return planetAge;
     }
     else if(planet === "pluto"){
-      return parseFloat((this.age * 248.59).toFixed(2));
+      planetAge = parseFloat((this.age * 248.59).toFixed(2));
+      return planetAge;
     }
     else{
-      return 0;
+      return planetAge;
     }
   }
 
@@ -123,8 +132,17 @@ export default class Person{
       return 0;
     }
   }
-  lifeLeft(){
-
+  lifeLeft(planet){
+    let currentAge = this.planetaryAge(planet);
+    let lifeExpected = this.planetaryExpectancy(planet);
+    let lifeLeft = parseInt(lifeExpected - currentAge);
+    if(currentAge < lifeExpected){
+      return "You have " + lifeLeft + " years left!";
+    }else if(currentAge > lifeExpected){
+      return "You have lived " +  Math.abs(lifeLeft) + " years past your life expectancy!";
+    }else{
+      return this.age;
+    }
   }
 
   //life left one each planet function!

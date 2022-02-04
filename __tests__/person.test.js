@@ -120,7 +120,12 @@ describe('Person', ()=>{
     expect(person3.planetaryExpectancy("pluto")).toEqual(18196.79);
   });
   test("should return years left on planet via age vs ALE", ()=>{
-    expect(person1.lifeLeft()).toEqual(44.6);
+    let person4 = new Person(95, "female");
+    expect(person1.lifeLeft("earth")).toEqual('You have 44 years left!');
+    expect(person4.lifeLeft("neptune")).toEqual('You have lived 3196 years past your life expectancy!');
+  });
+  test("should return this.age if no planet is entered", ()=>{
+    expect(person1.lifeLeft("")).toEqual(31);
   });
 });
 
