@@ -10,13 +10,21 @@ describe('Person', ()=>{
     person1 = new Person(31, "female");
     person2 = new Person(15, "male");
     person3 = new Person(24, "non-binary");
-
   });
-
   test("should create a person object with age and gender constructor", ()=>{
     expect(person1.age).toEqual(31);
     expect(person1.gender).toEqual("female");
+    expect(person2.age).toEqual(15);
+    expect(person2.gender).toEqual("male");
+    expect(person3.age).toEqual(24);
+    expect(person3.gender).toEqual("non-binary");
   });
+});
+
+
+/*
+
+I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary.
   test("should return avg life expectancy based on gender ex: female", ()=>{
     expect(person1.earthLifeExpectancy()).toEqual(75.6);
     expect(person1.lifeExpectancy).toEqual(75.6);
@@ -43,8 +51,8 @@ describe('Person', ()=>{
     person1.earthLifeExpectancy();
     person2.earthLifeExpectancy();
     person3.earthLifeExpectancy();
-    expect(person1.mercuryLifeExpectancy()).toEqual(18.14);
-    expect(person2.mercuryLifeExpectancy()).toEqual(16.99);
+    expect(person1.mercury()).toEqual(18.14);
+    expect(person2.mercury()).toEqual(16.99);
     expect(person3.mercuryLifeExpectancy()).toEqual(17.57);
   });
   test("should return a person's age on Venus ex: 19.22", ()=>{
@@ -91,6 +99,11 @@ describe('Person', ()=>{
     expect(person2.saturnAge()).toEqual(441.9);
     expect(person3.saturnAge()).toEqual(707.04);
   });
+  test("should return a person's life expectancy on Saturn", ()=>{
+    person1.earthLifeExpectancy();
+    person2.earthLifeExpectancy();
+    person3.earthLifeExpectancy();
+  });
   test("should return a person's age on Uranus ex: 2604.31", ()=>{
     expect(person1.uranusAge()).toEqual(2604.31);
     expect(person2.uranusAge()).toEqual(1260.15);
@@ -105,5 +118,4 @@ describe('Person', ()=>{
     expect(person1.plutoAge()).toEqual(7706.29);
     expect(person2.plutoAge()).toEqual(3728.85);
     expect(person3.plutoAge()).toEqual(5966.16);
-  });
-});
+  });*/
