@@ -19,6 +19,11 @@ describe('Person', ()=>{
     expect(person3.age).toEqual(24);
     expect(person3.gender).toEqual("non-binary");
   });
+  test("should return 0 if a person doesn't enter a planet", ()=>{
+    expect(person1.planetaryAge("")).toEqual(0);
+    expect(person2.planetaryAge("")).toEqual(0);
+    expect(person3.planetaryAge("")).toEqual(0);
+  })
   test("should determine a person's age on planet earth", ()=>{
     expect(person1.planetaryAge("earth")).toEqual(31);
     expect(person2.planetaryAge("earth")).toEqual(15);
