@@ -30,99 +30,117 @@ describe('Person', ()=>{
     expect(person3.planetaryAge("earth")).toEqual(24);
   });
   test("should determine a person's age on Mercury", ()=>{
-    expect(person1.planetaryAge("mercury")).toEqual(7.44);
-    expect(person2.planetaryAge("mercury")).toEqual(3.6);
-    expect(person3.planetaryAge("mercury")).toEqual(5.76);
+    expect(person1.planetaryAge("mercury")).toEqual(129.17);
+    expect(person2.planetaryAge("mercury")).toEqual(62.5);
+    expect(person3.planetaryAge("mercury")).toEqual(100);
   });
+
   test("should determine a person's age on Venus", ()=>{
-    expect(person1.planetaryAge("venus")).toEqual(19.22);
-    expect(person2.planetaryAge("venus")).toEqual(9.3);
-    expect(person3.planetaryAge("venus")).toEqual(14.88);
+    expect(person1.planetaryAge("venus")).toEqual(50);
+    expect(person2.planetaryAge("venus")).toEqual(24.19);
+    expect(person3.planetaryAge("venus")).toEqual(38.71);
   });
+
   test("should determine a person's age on Mars", ()=>{
-    expect(person1.planetaryAge("mars")).toEqual(58.28);
-    expect(person2.planetaryAge("mars")).toEqual(28.20);
-    expect(person3.planetaryAge("mars")).toEqual(45.12);
+    expect(person1.planetaryAge("mars")).toEqual(16.49);
+    expect(person2.planetaryAge("mars")).toEqual(7.98);
+    expect(person3.planetaryAge("mars")).toEqual(12.77);
   });
+
   test("should determine a person's age on Jupiter", ()=>{
-    expect(person1.planetaryAge("jupiter")).toEqual(367.66);
-    expect(person2.planetaryAge("jupiter")).toEqual(177.90);
-    expect(person3.planetaryAge("jupiter")).toEqual(284.64);
+    expect(person1.planetaryAge("jupiter")).toEqual(2.61);
+    expect(person2.planetaryAge("jupiter")).toEqual(1.26);
+    expect(person3.planetaryAge("jupiter")).toEqual(2.02);
   });
+
   test("should determine a person's age on Saturn", ()=>{
-    expect(person1.planetaryAge("saturn")).toEqual(913.26);
-    expect(person2.planetaryAge("saturn")).toEqual(441.9);
-    expect(person3.planetaryAge("saturn")).toEqual(707.04);
+    expect(person1.planetaryAge("saturn")).toEqual(1.05);
+    expect(person2.planetaryAge("saturn")).toEqual(0.51);
+    expect(person3.planetaryAge("saturn")).toEqual(0.81);
   });
+
   test("should determine a person's age on Uranus", ()=>{
-    expect(person1.planetaryAge("uranus")).toEqual(2604.31);
-    expect(person2.planetaryAge("uranus")).toEqual(1260.15);
-    expect(person3.planetaryAge("uranus")).toEqual(2016.24);
+    expect(person1.planetaryAge("uranus")).toEqual(0.37);
+    expect(person2.planetaryAge("uranus")).toEqual(0.18);
+    expect(person3.planetaryAge("uranus")).toEqual(0.29);
   });
+
   test("should determine a person's age on Neptune", ()=>{
-    expect(person1.planetaryAge("neptune")).toEqual(5108.49);
-    expect(person2.planetaryAge("neptune")).toEqual(2471.85);
-    expect(person3.planetaryAge("neptune")).toEqual(3954.96);
+    expect(person1.planetaryAge("neptune")).toEqual(0.19);
+    expect(person2.planetaryAge("neptune")).toEqual(0.09);
+    expect(person3.planetaryAge("neptune")).toEqual(0.15);
   });
+
   test("should determine a person's age on Pluto", ()=>{
-    expect(person1.planetaryAge("pluto")).toEqual(7706.29);
-    expect(person2.planetaryAge("pluto")).toEqual(3728.85);
-    expect(person3.planetaryAge("pluto")).toEqual(5966.16);
+    expect(person1.planetaryAge("pluto")).toEqual(0.12);
+    expect(person2.planetaryAge("pluto")).toEqual(0.06);
+    expect(person3.planetaryAge("pluto")).toEqual(0.1);
   });
+
   test("should return 0 if no planet is entered", ()=>{
     expect(person1.planetaryExpectancy("")).toEqual(0);
     expect(person1.planetaryExpectancy("")).toEqual(0);
     expect(person1.planetaryExpectancy("")).toEqual(0);
   });
+
   test("should return avg life expectancy on earth, based on gender", ()=>{
     expect(person1.planetaryExpectancy("earth")).toEqual(75.6);
     expect(person2.planetaryExpectancy("earth")).toEqual(70.8);
     expect(person3.planetaryExpectancy("earth")).toEqual(73.2);
   });
+
   test("should return avg life expectancy on mercury, based on gender",()=>{
-    expect(person1.planetaryExpectancy("mercury")).toEqual(18.14);
-    expect(person2.planetaryExpectancy("mercury")).toEqual(16.99);
-    expect(person3.planetaryExpectancy("mercury")).toEqual(17.57);
+    expect(person1.planetaryExpectancy("mercury")).toEqual(315);
+    expect(person2.planetaryExpectancy("mercury")).toEqual(295);
+    expect(person3.planetaryExpectancy("mercury")).toEqual(305);
   });
+
   test("should return avg life expectancy on venus, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("venus")).toEqual(46.87);
-    expect(person2.planetaryExpectancy("venus")).toEqual(43.90);
-    expect(person3.planetaryExpectancy("venus")).toEqual(45.38);
+    expect(person1.planetaryExpectancy("venus")).toEqual(121.94);
+    expect(person2.planetaryExpectancy("venus")).toEqual(114.19);
+    expect(person3.planetaryExpectancy("venus")).toEqual(118.06);
   });
+
   test("should return avg life expectancy on mars, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("mars")).toEqual(142.13);
-    expect(person2.planetaryExpectancy("mars")).toEqual(133.10);
-    expect(person3.planetaryExpectancy("mars")).toEqual(137.62);
+    expect(person1.planetaryExpectancy("mars")).toEqual(40.21);
+    expect(person2.planetaryExpectancy("mars")).toEqual(37.66);
+    expect(person3.planetaryExpectancy("mars")).toEqual(38.94);
   });
+
   test("should return avg life expectancy on jupiter, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("jupiter")).toEqual(896.62);
-    expect(person2.planetaryExpectancy("jupiter")).toEqual(839.69);
-    expect(person3.planetaryExpectancy("jupiter")).toEqual(868.15);
+    expect(person1.planetaryExpectancy("jupiter")).toEqual(6.37);
+    expect(person2.planetaryExpectancy("jupiter")).toEqual(5.97);
+    expect(person3.planetaryExpectancy("jupiter")).toEqual(6.17);
   });
+
   test("should return avg life expectancy on saturn, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("saturn")).toEqual(2227.18);
-    expect(person2.planetaryExpectancy("saturn")).toEqual(2085.77);
-    expect(person3.planetaryExpectancy("saturn")).toEqual(2156.47);
+    expect(person1.planetaryExpectancy("saturn")).toEqual(2.57);
+    expect(person2.planetaryExpectancy("saturn")).toEqual(2.40);
+    expect(person3.planetaryExpectancy("saturn")).toEqual(2.48);
   });
+
   test("should return avg life expectancy on uranus, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("uranus")).toEqual(6351.16);
-    expect(person2.planetaryExpectancy("uranus")).toEqual(5947.91);
-    expect(person3.planetaryExpectancy("uranus")).toEqual(6149.53);
+    expect(person1.planetaryExpectancy("uranus")).toEqual(0.90);
+    expect(person2.planetaryExpectancy("uranus")).toEqual(0.84);
+    expect(person3.planetaryExpectancy("uranus")).toEqual(0.87);
   });
+
   test("should return avg life expectancy on neptune, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("neptune")).toEqual(12458.12);
-    expect(person2.planetaryExpectancy("neptune")).toEqual(11667.13);
-    expect(person3.planetaryExpectancy("neptune")).toEqual(12062.63);
+    expect(person1.planetaryExpectancy("neptune")).toEqual(0.46);
+    expect(person2.planetaryExpectancy("neptune")).toEqual(0.43);
+    expect(person3.planetaryExpectancy("neptune")).toEqual(0.44);
   });
+
   test("should return avg life expectancy on pluto, based on gender", ()=>{
-    expect(person1.planetaryExpectancy("pluto")).toEqual(18793.40);
-    expect(person2.planetaryExpectancy("pluto")).toEqual(17600.17);
-    expect(person3.planetaryExpectancy("pluto")).toEqual(18196.79);
+    expect(person1.planetaryExpectancy("pluto")).toEqual(0.3);
+    expect(person2.planetaryExpectancy("pluto")).toEqual(0.28);
+    expect(person3.planetaryExpectancy("pluto")).toEqual(0.29);
   });
+
   test("should return years left on planet via age vs ALE", ()=>{
     let person4 = new Person(95, "female");
-    expect(person1.lifeLeft("earth")).toEqual('You have 44 years left!');
-    expect(person4.lifeLeft("neptune")).toEqual('You have lived 3196 years past your life expectancy!');
+    expect(person1.lifeLeft("earth")).toEqual('You have 44.60 years left!');
+    expect(person4.lifeLeft("neptune")).toEqual('You have lived 0.12 years past your life expectancy!');
   });
   test("should return this.age if no planet is entered", ()=>{
     expect(person1.lifeLeft("")).toEqual(31);
