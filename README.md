@@ -19,7 +19,7 @@
 
 ## Description
 
-_This project is primarily being used to learn Test Driven Development using Jest. It takes a user's age and gender and then based on what planet the user chooses, the user is told their age, life expectancy and year's left!_
+_This project is primarily being used to learn Test Driven Development using Jest. It takes a user's age and gender and then based on what planet the user chooses, the user is told their age, life expectancy and years left!_
 
 ## Setup/Installation Requirements
 

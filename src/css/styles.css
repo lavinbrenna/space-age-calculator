@@ -1,8 +1,8 @@
 body{
   background-color: black;
   text-align: center;
-  font-family: moby, sans-serif;
-  font-weight: 700;
+  font-family: lores-12,sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 h2, h4{
@@ -13,6 +13,9 @@ h2, h4{
   0 0 42px #0a9cf5,
   0 0 82px #ff2a6d,
   0 0 92px #0a9cf5;
+  font-family: moby, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 div{
   background-color:#b957ce;

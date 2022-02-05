@@ -24,7 +24,7 @@ function mayFlyLife(userAge){
   let userMayFlyLives = userAge * mayFlyLives;
   let flyCompare = mayFlyLives/ageOfSun;
   let userCompare = userAge/ageOfSun;
-  return `You have lived longer than ${userMayFlyLives} mayflies! A mayfly's age is ${parseFloat(flyCompare)} times the age of the sun. You are ${parseFloat(userCompare)} times the age of the sun (in case you don't know, that's a lot of zeros)! `;
+  return `You have lived longer than ${userMayFlyLives} mayflies! A mayfly's age is ${parseFloat(flyCompare)} times the age of the sun. You are ${parseFloat(userCompare)} times the age of the sun (in case you don't know, that e-9 means that there are that many 0s before your number even starts)! `;
 }
 
 $(".keith").text(keithRichards());
