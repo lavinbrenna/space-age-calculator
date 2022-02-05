@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <link rel="stylesheet" href="https://use.typekit.net/ppy2xqh.css">
+  <title>Planetary Age Tracker</title>
 </head>
 <body>
-  <h2>Hello world!</h2>
-  <img src="./../assets/yoyogi.jpg">
+  <h2>Greetings human!</h2>
+  <h4>Allow me to calculate your age on different planets!</h4>
+  <div id ="ageForm">
+    <form id="ageForm">
+      <div id="form-group">
+        <label for ="userAge">Please enter your age: </label>
+        <input type="number">
+      </div>
+      <div id="form-group">
+        <label for="userPlanets">Please select a planet:</label>
+        <select id="userPlanet">
+          <option value="mercury" id="userPlanet">Mercury</option>
+          <option value="venus" id="userPlanet">Venus</option>
+          <option value="earth" id="userPlanet">Earth</option>
+          <option value="mars" id="userPlanet">Mars</option>
+          <option value="jupiter" id="userPlanet">Jupiter</option>
+          <option value="saturn" id="userPlanet">Saturn</option>
+          <option value="uranus" id="userPlanet">Uranus</option>
+          <option value="neptune" id="userPlanet">Neptune</option>
+          <option value="pluto" id="userPlanet">Pluto</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="facts">  
+  <p>Did you know that if Keith Richards was a dog on Jupiter, by the year 2076 he would be <span class="keith"></span> years old?</p>
+  </div>
 </body>
 </html>

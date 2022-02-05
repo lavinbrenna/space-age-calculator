@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+  text-align: center;
+  font-family: moby, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+h2{
+  color:#0a9cf5;
+  text-shadow: 0 0 7px #ff2a6d,
+  0 0 10px #0a9cf5,
+  0 0 21px #ff2a6d,
+  0 0 42px #0a9cf5,
+  0 0 82px #ff2a6d,
+  0 0 92px #0a9cf5;
+}
+div{
+  background-color:#ff184c;
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}

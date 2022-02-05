@@ -8,7 +8,7 @@ export default class Person{
     let planetAge = 0;
     if(planet === "earth"){
       planetAge = this.age;
-      return planetAge
+      return planetAge;
     }
     else if(planet === "mercury"){
       planetAge = parseFloat((this.age * .24).toFixed(2));
@@ -145,11 +145,6 @@ export default class Person{
     }
   }
 
-  //life left one each planet function!
-
-  //how old is keith richards function
-
-  //mayfly function
 }
 /*
 I decided to go an entirely new direction for my project, I was writing a function for each planet and each planet's life expectancy separately, but realized that's not necessary. I wanted to keep this code to show documentation of where I was originally going so it can be compared with where it ended up.
