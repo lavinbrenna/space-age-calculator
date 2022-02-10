@@ -12,7 +12,7 @@ function keithRichards(){
   console.log(jupiterDogKeith);
   return jupiterDogKeith;
 }
-//mayfly function
+
 
 function mayFlyLife(userAge){
   let ageOfSun = 4603000000;
